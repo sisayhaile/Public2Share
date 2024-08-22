@@ -5,7 +5,9 @@ variable "rg2" {
   default = null
 }
 variable "hub" {
-  type    = list(list(map(string)))
+  type    = list(
+    map(
+       list(string)))
   default = null
 }
 variable "tags" {
